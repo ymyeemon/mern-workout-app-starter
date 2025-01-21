@@ -1,7 +1,5 @@
 // Entry file for the backend app
 // where we register the express app
-import cors from "cors";
-
 const cors = require("cors");
 
 app.use(cors());
