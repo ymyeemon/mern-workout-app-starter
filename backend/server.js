@@ -1,5 +1,8 @@
 // Entry file for the backend app
 // where we register the express app
+const cors = require("cors");
+const app = express();
+app.use(cors());
 
 // dovenv is the package that loads environment variables
 // from .env file into process.env object available globally in node.js environment
@@ -14,7 +17,6 @@ const mongoose = require("mongoose");
 const workoutRoutes = require("./routes/workouts");
 
 // Set up the express app
-const app = express();
 
 // Middleware:
 // any code that executes between us getting a request on the server
