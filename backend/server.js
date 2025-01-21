@@ -1,8 +1,5 @@
 // Entry file for the backend app
 // where we register the express app
-const cors = require("cors");
-
-app.use(cors());
 
 // dovenv is the package that loads environment variables
 // from .env file into process.env object available globally in node.js environment
