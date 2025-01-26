@@ -3,8 +3,6 @@
 
 const cors = require("cors");
 
-app.use(cors());
-
 // dovenv is the package that loads environment variables
 // from .env file into process.env object available globally in node.js environment
 // config() attaches environment variables to process.env
@@ -23,6 +21,9 @@ const app = express();
 // Middleware:
 // any code that executes between us getting a request on the server
 // and us sending a response back to the client
+
+// Enable CORS
+app.use(cors());
 
 // Parse and attach data sent to server to request object
 app.use(express.json());
